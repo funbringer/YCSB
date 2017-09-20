@@ -17,8 +17,8 @@ Perform the following steps:
 5. Change `logs_dir` and `pg_bin_dir` in `run.sh`.
 6. (OPTIONAL) Adjust port in `run.sh` and `*.conf` files.
 7. Create a cluster using `initdb` and adjust its `postgresql.conf` using `postgresql.add`.
-8. Start PostgreSQL cluster.
-9. Finally, run the benchmark (e.g. `./run.sh pathman`). Available options: `pathman`, 'vanilla'.
+8. Start the PostgreSQL cluster.
+9. Finally, run the benchmark (e.g. `./run.sh pathman`). Available options: `pathman`, `vanilla`.
 
 ## What should I do next?
 
