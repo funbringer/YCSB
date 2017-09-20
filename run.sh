@@ -72,8 +72,8 @@ for th in 1 16 32 64 96 128; do
 		tee $logs_dir/$config-single-inserts-$load-$th.log;
 
 		# vacuum table
-		echo vacuuming table $config
-		$pg_bin_dir/psql -p$port ycsb -c "vacuum $config"
+		echo vacuuming all tables
+		$pg_bin_dir/psql -p$port ycsb -c "vacuum analyze"
 
 		# run bench
 		echo "starting benchmark (load=$load, threads=$th)"
