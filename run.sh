@@ -52,8 +52,7 @@ $pg_bin_dir/psql -p$port ycsb < $test_dir/$config.sql
 
 
 # use max threads for "ycsb load"
-FILLER_THREADS=8
-#FILLER_THREADS=144
+FILLER_THREADS=144
 
 for th in 1 16 32 64 96 128; do
 	for load in a b c d e f; do
