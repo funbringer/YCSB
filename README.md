@@ -16,7 +16,7 @@ Perform the following steps:
 4. Install [pg_pathman](https://github.com/postgrespro/pg_pathman).
 5. Change `logs_dir` and `pg_bin_dir` in `run.sh`.
 6. (OPTIONAL) Adjust port in `run.sh` and `*.conf` files.
-7. (OPTIONAL) Create a cluster using `initdb` and adjust its `postgresql.conf` using `postgresql.add`.
+7. Create a cluster using `initdb` and adjust its `postgresql.conf` using `postgresql.add`.
 8. Start PostgreSQL cluster.
 9. Finally, run the benchmark (e.g. `./run.sh pathman`). Available options: `pathman`, 'vanilla'.
 
