@@ -4,7 +4,7 @@ This benchmark is based on [YCSB](https://github.com/brianfrankcooper/YCSB).
 
 ## Overview
 
-This benchmark runs all kinds of workloads (a, b, etc) for several minutes. The table is partitioned by range, partition key is the 1st column of type `varchar(255)`.
+This benchmark runs all kinds of workloads (a, b, etc) for several minutes. The table is partitioned by range (using pg_pathman or vanilla), partition key is the 1st column of type `varchar(255)`. The amount of partitions is always the same (500), and the number of worker threads (sessions) changes from 1 to 128 with a step size of 16.
 
 ## Step-by-step guide
 
